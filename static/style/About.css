@@ -1,0 +1,39 @@
+.about-styled {
+    padding: 150px 0;
+    background: var(--white-1);
+}
+
+.about-styled h1{
+    margin-bottom: 30px;
+    font-weight: bold;
+    
+}
+
+.about-styled .text {
+    display: flex;
+    align-items: center;
+}
+
+.title-responsive {
+   display: none;
+   text-align: center;
+}
+
+@media only screen and (max-width: 991px) { 
+    .about-styled .image {
+        margin-bottom: 20px;
+    }
+    .about-styled .text {
+        text-align: center;
+    }
+    .about-styled {
+        padding: 75px 0;
+    }
+    .about-styled .title-responsive {
+        display: block;
+    }
+    .about-styled .title-normal {
+        display: none;
+    }
+}
+

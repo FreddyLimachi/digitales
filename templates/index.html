@@ -1,0 +1,308 @@
+{% extends "layout.html" %} 
+
+{% block title %} {{ super()}} Digitales {% endblock %}
+
+{% block content %}
+
+    <section class="landing-styled" id="home">
+        <img src="{{ url_for('static',filename='assets/duotone(1).webp') }}"" alt="bg"  name="slider">
+        <div>
+            <h1>Agencia de Diseño y Desarrollo Web</h1>
+            <p>
+                Estamos listos para ayudarte, trabajamos estrechamente contigo para comprender tus requerimientos y diseñar una solución que se
+                adapte perfectamente a tus necesidades.
+            </p>
+        </div>
+    </section>
+
+    <section class="overview-styled">
+        <div class="container">
+            <h1 class="title">¿Por qué necesita digitalizar su negocio?</h1>
+            <div class="row">
+                <div class="col-lg-6 col-xl-4 item">
+                    <span>1</span>
+                    <h2>Mayor alcance</h2>
+                    <p>
+                        Al tener presencia en línea, tu negocio puede ser visto por más personas, incluso
+                        fuera de tu zona geográfica.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 item">
+                    <span>2</span>
+                    <h2>Mayor comodidad</h2>
+                    <p>
+                        Los clientes pueden realizar compras o solicitudes de
+                        productos o servicios desde la comodidad de su hogar o dispositivo móvil.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 item">
+                    <span>3</span>
+                    <h2>Menores costos operativos</h2>
+                    <p>
+                        La digitalización puede reducir los costos en términos de almacenamiento
+                        de inventario, procesamiento de pedidos, y otros procesos administrativos.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 item">
+                    <span>4</span>
+                    <h2>Mayor eficiencia</h2>
+                    <p>
+                        Al automatizar ciertos procesos y tareas, la digitalización puede ayudar a
+                        mejorar la eficiencia del negocio
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 item">
+                    <span>5</span>
+                    <h2>Análisis y toma de decisiones</h2>
+                    <p>
+                        El uso de herramientas digitales puede ayudar a recopilar y analizar datos importantes
+                        sobre el negocio y sus clientes, lo que puede ayudar a tomar decisiones más informadas.
+                    </p>
+                </div>
+                <div></div>
+             
+            </div>
+        </div>
+    </section>
+
+    <section class="about-styled" id="about">
+        <div class="container">
+            <h1 class="title-responsive">¿Quiénes somos?</h1>
+            <div class="row"> 
+                <div class="image col-lg-7 col-xl-6 text-center">
+                    <img src="{{ url_for('static',filename='assets/devs.webp') }}" alt="bg" class="img-fluid">
+                </div>
+                <div class="text col-lg-5 col-xl-5 ms-auto">
+                    <div>
+                        <h1 class="title-normal">¿Quiénes somos?</h1>
+                        <p>
+                            Somos un equipo apasionado por las tecnologías digitales con más de 5 años de experiencia en la
+                            industria.
+                            somos especialistas en el diseño y desarrollo web. Desde nuestra conformación,
+                            hemos estado trabajando para ofrecer soluciones innovadoras y personalizadas.
+                            Nos enorgullece haber ayudado a muchas empresas a llevar sus negocios al mundo digital
+                            y mejorar su presencia en línea.
+                            <br>
+                            <br>
+                            Nos dedicamos a ofrecer un servicio de alta calidad, siempre trabajando de manera transparente y
+                            colaborativa con nuestros clientes.
+                            Nos encargamos de cada detalle, desde el diseño hasta la implementación y el mantenimiento
+                            a largo plazo, para que nuestros clientes puedan concentrarse en lo que hacen mejor: hacer crecer su
+                            negocio.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-styled" id="services">
+        <div class="container">
+
+            <div class="title">
+                <h1>Algunos de nuestros servicios</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#1A73E8" viewBox="0 0 256 256">
+                            <path
+                                d="M216,40H72A16,16,0,0,0,56,56V72H40A16,16,0,0,0,24,88V200a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V184h16a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM184,88v16H40V88Zm0,112H40V120H184v80Zm32-32H200V88a16,16,0,0,0-16-16H72V56H216Z">
+                            </path>
+                        </svg>
+                        <h3>Landing Page</h3>
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#1473e8" viewBox="0 0 256 256">
+                            <path
+                                d="M232,168h-8V72a24,24,0,0,0-24-24H56A24,24,0,0,0,32,72v96H24a8,8,0,0,0-8,8v16a24,24,0,0,0,24,24H216a24,24,0,0,0,24-24V176A8,8,0,0,0,232,168ZM48,72a8,8,0,0,1,8-8H200a8,8,0,0,1,8,8v96H48ZM224,192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8v-8H224ZM152,88a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,88Z">
+                            </path>
+                        </svg>
+                        <h3>Sitio Web</h3>
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#1473e8" viewBox="0 0 256 256">
+                            <path
+                                d="M96,216a16,16,0,1,1-16-16A16,16,0,0,1,96,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,184,200ZM231.65,74.35l-28.53,92.71A23.89,23.89,0,0,1,180.18,184H84.07A24.11,24.11,0,0,1,61,166.59L24.82,40H8A8,8,0,0,1,8,24H24.82A16.08,16.08,0,0,1,40.21,35.6L48.32,64H224a8,8,0,0,1,7.65,10.35ZM213.17,80H52.89l23.49,82.2a8,8,0,0,0,7.69,5.8h96.11a8,8,0,0,0,7.65-5.65Z">
+                            </path>
+                        </svg>
+                        <h3>Ecommerce</h3>
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <i class="fa fa-calendar-check-o "></i>
+                        <h3 class="title-large">Sistema de seguimiento de Ventas</h3>
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <i class="fa fa-file-text-o"></i>
+                        <h3>Sistema de Facturación</h3>   
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <i class="fa fa-user-o"></i>
+                        <h3>Sistema de Planilla</h3>
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <i class="fa fa-calculator"></i>
+                        <h3>Sistema Contable</h3>
+                    </div>
+                </div>
+
+                <div class="col-item col-sm-6 col-md-4 col-xl-3">
+                    <div class="service-item">
+                        <i class="fa fa-puzzle-piece"></i>
+                        <h3>Sistemas Personalizados</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <span class="line"></span>
+
+    <section class="projects-styled" id="portfolio">
+        <div class="container">
+
+            <h1 class="title">Portafolio</h1>
+
+            <div class="row">
+                <div class="col-item col-lg-6">
+                    <div class="projects-item">
+                        <div class="title-item">
+                            <h1>Gaming store</h1>
+        
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                        <img src="{{ url_for('static',filename='assets/gamingstore.webp') }}" alt="tienda gaming">
+                    </div>
+                </div>
+
+                <div class="col-item col-lg-6">
+                    <div class="projects-item">
+                        <div class="title-item">
+                            <h1>Travel</h1>
+                            
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            
+                        </div>
+                        <img src="{{ url_for('static',filename='assets/travelpe.webp') }}" alt="app de viajes">
+                    </div>
+                </div>
+
+                <div class="col-item col-lg-6">
+                    <div class="projects-item">
+                       <div class="title-item">
+                            <h1>Shop app</h1>
+                           
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            
+                       </div>
+                        <img src="{{ url_for('static',filename='assets/shop.webp') }}" alt="tienda de ropa">
+                    </div>
+                </div>
+
+                <div class="col-item col-lg-6">
+                    <div class="projects-item">
+                        <div class="title-item">
+                            <h1>Flavor app</h1>
+                            
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                           
+                        </div>
+                        <img src="{{ url_for('static',filename='assets/flavor.webp') }}" alt="app de comida">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="email-styled" id="contact">
+        <img src="{{ url_for('static',filename='assets/duotone(1).webp') }}" alt="bg">
+        <div class="email-container">
+            <h1>Ponerse en contacto</h1>
+            <p>
+                Llámenos al 934 202 670
+            </p>
+            <div>
+                <button>
+                    <a href="https://wa.me/952684111">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                            <path
+                                d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                        <path
+                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                        <path
+                            d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
